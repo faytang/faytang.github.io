@@ -1,0 +1,144 @@
+@media only screen and (max-width:310px) and (min-width:300px) {
+    html {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width:320px) and (min-width:310px) {
+    html {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width:360px) and (min-width:320px) {
+    html {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width:360px) and (min-width:350px) {
+    html {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width:480px) and (min-width:360px) {
+    html {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width:480px) and (min-width:470px) {
+    html {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width:560px) and (min-width:480px) {
+    html {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width:570px) and (min-width:560px) {
+    html {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width:640px) and (min-width:570px) {
+    html {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (max-width:640px) and (min-width:630px) {
+    html {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (min-width:640px) {
+    html {
+        font-size: 16px !important;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #201B55;
+    /*font-family:"黑体", Tahoma,Arial,"宋体","SimSun","微软雅黑"; */
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "微软雅黑";
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    /* border: 1px solid #dfdee6; */
+    border-radius: 4px;
+    padding: 10px;
+    background: #303340;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+}
+a {
+    color: inherit;
+    text-decoration: none !important;}
+
+input::-webkit-input-placeholder {
+    color: #999
+}
+
+
+/* 使用webkit内核的浏览器 */
+
+input:-moz-placeholder {
+    color: #999
+}
+
+
+/* Firefox版本4-18 */
+
+input::-moz-placeholder {
+    color: #999
+}
+
+
+/* Firefox版本19+ */
+
+input:-ms-input-placeholder {
+    color: #999
+}
+
+
+/* IE浏览器 */
+
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+a,a:visited{
+    outline:none;
+    background: none;
+    text-decoration: none;
+}

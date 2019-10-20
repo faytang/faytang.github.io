@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ethers Perpetual</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    <style>
+        body {
+            width: 100%;
+            background: url('./img/bg.png') no-repeat 100% top,#0a0522;
+            background-size: 100% auto;
+            color: white;
+        }
+        .txt{
+            height: 320px;
+                width: 82%;
+                    padding: 30px 15px 0;
+                    letter-spacing: 0px;
+        }
+        .box5 .cantent>div>span:nth-of-type(2){width: 20%;}
+        .box5 .cantent>div>span:nth-of-type(1) {
+    width: 82%;
+}
+.box4 .cantent>div>span:nth-of-type(1){
+    line-height: 16px;
+}
+.box4 .cantent>div{padding: 5px 0;}
+.btn-1{    width: 100px;}
+.box4{background-size: 100% 100%;}
+    </style>
+
+</head>
+
+<body>
+<div class="box1">
+        <div class="heard">
+             <img class="caidan" src="./img/cd.png" alt="" id="icon_aside">
+             <span style="font-size: 16px;">Ethers Perpetual</span>
+             <img  src="./img/wenhao.png" alt="" id="guize" class="guize" >   
+        </div>
+         <a href="index.html" style="position: absolute;right: 8px;z-index: 9;"><img class="guoqi" src="./img/guoqi.png" alt="" width="30"></a>
+        <div class="logo">
+            <img src="./img/yuan-1.png" alt="" class="yuan-1"/>
+            <img src="./img/yuan-2.png" alt="" class="yuan-2"/>
+          <img src="./img/yuan-3.png" alt="" class="yuan-3"/>
+            <img src="./img/yuan-4.png" alt="" class="yuan-4"/>
+            <img src="./img/yuan-5.png" alt="" class="yuan-5"/>
+            <img src="./img/yuan-6.png" alt="" class="yuan-6"/>
+
+        </div>
+    </div>
+
+    <div class="kong">&nbsp;</div>
+
+    <div class="box2">
+        <div class="title">Introduce</div>
+        <div class="txt">
+            EPP Ethernet is the world's first payment platform for real-time transactions in a full range based on its own public chain to build smart contracts. The platform uses the settlement mechanism of smart contracts to build a low-cost payment system, helping compliant parties to achieve automated transactions. Ethereum will also set off a new reform of the digital economy, and the top development team has laid the foundation for the success of EPP.
+        </div>
+    </div>
+
+<div class="box3">
+        <div class="game-title">
+            <h1>Fair game</h1>
+            <span>Simple, transparent and open source</span>
+        </div>
+        <div class="game-box">
+            <h2>All investments：<span class="allBets"></span> ETH</h2>
+            <h2>Companion fund：<span class="supporter"></span> ETH</h2>
+            <div class="box-1">
+                <div class="back5">
+                    <div class="back5_1">
+                        <div class="tou"><span>5</span> ETH</div>
+                        <div class="tou"><span>10</span> ETH</div>
+                        <div class="tou"><span>15</span> ETH</div>
+                    </div>
+                </div>
+                <div class="back5">
+                    <div class="back5_1">
+                        <div class="tou"><span>20</span> ETH</div>
+                        <div class="tou"><span>25</span> ETH</div>
+                        <div class="tou"><span>30</span> ETH</div>
+                    </div>
+                </div>
+                <div class="jiajian">
+                    <img class="jian" src="./img/jian.png" alt="">
+                    <div>
+                        <span class="shu">1</span>
+                    </div>
+                    <img class="jia" src="./img/jia.png" alt="">
+                </div>
+                <!-- 投注 -->
+                <div class="touzhu" id="button">
+                    <span class="tz">Betting</span>
+                    <span class="pd">line up</span>
+                </div>
+                
+                <div class="fenh">Today's dividend multiplier：<span class="coefficient"></span></div>
+
+            </div>
+        </div>
+    </div>  
+
+   
+   <div class="box4">
+        <h3>My income</h3>
+        <div class="cantent">
+                    <div>
+                        <span>Total revenue</span>
+                         <span ><span class="huang allEarnings"></span> ETH</span>
+                    </div>
+                    <div>
+                        <span>Current position </span>
+                        <span ><span class="huang currentPosition"></span> ETH</span>
+                    </div>
+                    <div>
+                        <span>Cashable Quantity</span>
+                        <span ><span class="huang unlockAmount"></span> ETH</span>
+                    </div>
+                    <div>
+                        <span>Accumulated betting dividend</span>
+                        <span ><span class="huang allStaticAmount"></span> ETH</span>
+                    </div>
+                     <div>
+                        <span>Accumulated Node Benefits</span>
+                        <span ><span class="huang allDynamicAmount"></span> ETH</span>
+                    </div>
+                    <div>
+                        <span>Accumulated fund dividend</span>
+                        <span ><span class="huang hisSupporterAmount"></span> ETH</span>
+                    </div>
+                    <div>
+                        <span>Receivable earnings</span>
+                            <span ><span class="huang withdrawalAmount"></span> ETH</span>
+                    </div>
+        </div>
+        <div>
+            <span> <button class="btn profit" >Withdraw</button></span>
+            <span> <button class="btn " id="futou">Redelivery </button></span>
+        </div>
+    </div>
+
+    <div class="title">Statistics</div>
+    <div class="box5">
+        
+            <div class="cantent">
+                    <div>
+                        <span>Invitation code</span>
+                        <span class="inviteCode"></span>
+                    </div>
+                     <div>
+                        <span>Number of invitations</span>
+                        <span class="inviteAmount"></span>
+                    </div>
+                    <div>
+                        <span>Mesh size</span>
+                        <span class="comuitityNumber"></span>
+                    </div>
+                    <div>
+                        <span>Bonus level</span>
+                        <span class="staticLevel"></span>
+                    </div>
+                    <div>
+                        <span>Node level</span>
+                        <span class="dynamicLevel"></span>
+                    </div>
+             </div>
+             <div class="cantent">
+                     <div>
+                        <span>Recommender</span>
+                        <span class="parentCode"></span>
+                    </div>
+                    <div>
+                        <span>Total assets</span>
+                        <span class="allInvest"></span>
+                    </div>
+                    <div>
+                        <span>Ether gold <img  src="./img/wenhao.png" alt="" class="tips"/></span>
+                        <span class="gold"></span>
+                    </div>
+                    <div>
+                        <span>Lucky draw times</span>
+                        <span class="luckyDrawTime"></span>
+                        <span class="btn-1" id="chouj">Luck draw</span>
+                    </div>
+                    <div>
+                        <span>Repetition Number</span>
+                        <span class="reInvestCount"></span>
+                        <span class="btn-1" id="redeem">Redeem</span>
+                    </div>
+             <button id="copy_button" class="copylianjie">Copy Invitation Links</button>
+    </div>
+    </div>
+
+    <!-- 侧导航 -->
+    <aside class="aside hide">
+        <div class="aside_mask"></div>
+        <section class="aside_box">
+
+            <div class="aside_nav" style="overflow:auto;">
+                <div class="userinfo_box">
+                    <div class="userinfo_item">
+                        <span class="iconfont font24 fonta9">
+                            <img src="img/1.png" alt="">
+                        </span>
+                        <a href="index-en.html">
+                            <span class="fontc_f red_box">Home</span>
+                            <span class="iconfont icon-gengduo font20 fontc_f"></span>
+                        </a>
+                    </div>
+                   <div class="userinfo_item">
+                        <span class="iconfont font24 fonta9"><img src="img/5.png" alt=""></span>
+                        <a href="LuckDraw-en.html">
+                            <span class="fontc_f ">Lucky draw</span>
+                            <span class="iconfont icon-gengduo font20 fontc_f"></span>
+                        </a>
+                    </div>
+                    <div class="userinfo_item">
+                        <span class="iconfont font24 fonta9"><img src="img/4.png" alt=""></span>
+                        <a href="Investment-en.html">
+                            <span class="fontc_f ">Investment record</span>
+                            <span class="iconfont icon-gengduo font20 fontc_f"></span>
+                        </a>
+                    </div>
+                    <div class="userinfo_item">
+                            <span class="iconfont font24 fonta9"><img src="img/3.png" alt=""></span>
+                            <a href="tixian_list-en.html">
+                                <span class="fontc_f ">List of withdrawals</span>
+                                <span class="iconfont icon-gengduo font20 fontc_f"></span>
+                            </a>
+                    </div>
+                    
+                    <div class="userinfo_item">
+                        <span class="iconfont font24 fonta9"><img src="img/6.png" alt=""></span>
+                        <a href="platoon-en.html">
+                            <span class="fontc_f ">List of orders</span>
+                            <span class="iconfont icon-gengduo font20 fontc_f"></span>
+                        </a>
+                    </div>
+                    <div class="userinfo_item">
+                        <span class="iconfont font24 fonta9"><img src="img/7.png" alt=""></span>
+                        <a href="Bonus-list-en.html">
+                            <span class="fontc_f ">Bonus list</span>
+                            <span class="iconfont icon-gengduo font20 fontc_f"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+
+    <!-- 弹出层分享链接 -->
+    <div class="ceng hide">
+       <div class="rulee">
+            <div class="tit"></div>
+            <div class="ht"></div>
+            <div class="gb xx">Got it</div>
+        </div>
+    </div>
+    <!-- 活动规则 -->
+    <div class="activity hide">
+        <div class="activity_1">
+            <div>
+                <span>1. Bet amount: 1-30eth, the amount must be an integer, the maximum investment limit of a single account is 30 eth, and can be re invested after unfreezing.</span><br>
+                <span>2. The principal will be unfrozen 10 days after the whole time of your bet. After unfreezing, no dividend will be calculated and node rewards will be calculated normally. You can withdraw at any time and no node rewards will be calculated after withdrawing. If the hierarchical relationship of performance reset remains unchanged before rejoining, the node dividend will be recalculated according to the new performance.</span><br>
+                <span>3.Membership level is v1-v5, V1: 1-5eth, V2: 6-10eth, V3; 11-15eth, V4: 16-20eth, V5: 21-30eth.</span><br>
+                <span>4.Dividend: 0.7% for V1, 0.9% for V2, 1.1% for V3, 1.2% for V4 and 1.3% for V5.</span><br>
+                <span> 5. Node reward: push one generation, two generations, three generations, four generations and five infinite generations. <br/>
+                V1: get 20% of the daily dividend of generation 1;<br/>
+V2: 20% of the daily dividend of the first generation and 20% of the second generation;<br/>
+V3: 20% of the daily dividend of the first generation, 20% of the second generation and 20% of the third generation;<br/>
+V4: get 20% of the daily dividend of the first generation, 20% of the second generation, 20% of the third generation and 10% of the fourth generation;<br/>
+V5: get unlimited generation rewards, 20% of the daily dividend of the first generation, 20% of the second generation, 20% of the third generation, 10% of the fourth generation, 7% of the fifth to the tenth generation, 3% of the 11th to the 20th generation, and 1% after the 21st generation.</span><br>
+                <span>6. Reward burn: when the bet amount of your account is less than the recommended friend's bet amount, the node reward is calculated based on your account amount. When the bet amount of your account is greater than or equal to the recommended friend's bet amount, the node reward is calculated based on the recommended friend's bet amount. In addition, the node reward needs to be multiplied by the node level coefficient. V1 is 30%, V2 is 50%, V3 is 70%, V4 is 80%, and V5 is 100%. For example, if a recommends B, a bet 5eth, and B bet 30eth, then a gets a daily bonus of (5 * 1 / 100) * 20% * 30%.</span><br>
+                <span>7. 6% of the total investment will be automatically transferred to the special account, of which 2% will be used for ecological construction, 2% for application development and 2% for market promotion.</span><br>
+                <span>8. Dividends and node rewards are calculated automatically by the smart contract, and settled automatically at 0:00 Beijing time every day. After settlement, players can withdraw cash at any time, all of which are executed by the smart contract code, and no one can control it.</span><br>
+                <span>9. Adventurer mechanism: the smart contract will automatically evaluate the risk value of daily bet through Bancor protocol, and the higher the risk is. The higher the daily bonus and the corresponding node bonus, the minimum daily bonus is the basic proportion described above, and the maximum is three times of the basic proportion.</span><br>
+                <span>10. Lucky person mechanism: 80% of the profits to be withdrawn will be distributed according to eth, and 20% will form eth gold to reward participants. Eth gold and eth are exchanged at a ratio of 1:1. For example, one eth 0.8 earnings can be withdrawn and 0.2 earnings can be exchanged into eth gold. If the bet is successful, the re investment is successful, or an activated account is recommended, the chance to extract eth can be increased once, without capping. Eth gold cannot withdraw cash. 0.5 eth gold can participate in the lottery once.</span><br>
+                <span>11. Accompanier mechanism: 1% of the player's bet will enter the accompanier fund. Players who make three rounds of continuous re investment (click the "re investment" button to count as re investment) will be marked as accompaniers, one round every 10 days. All accompanies share the fund equally and enjoy a dividend every 10 days.<br>
+                1. There are three small reward pools, with V3 prize pool accounting for 20%, V4 prize pool accounting for 30%, and V5 prize pool accounting for 50%.<br>
+                2. When the player's bonus level reaches V3 or above and has been re invested for 3 consecutive rounds, the bonus pool of corresponding level can be divided equally according to the player's bonus level. If the player's bonus level is lower than V3, no bonus bonus will be obtained.</span><br>
+                <span>12. Dynamic equilibrium mechanism: when a large number of players rush in, the dynamic equilibrium mechanism will be automatically opened to avoid the impact of centralized betting on the overall data. When players participate in the queue, the queue amount does not calculate the dividend income, does not calculate the node income, and the queue amount can be withdrawn at any time.</span><br>
+                <span>13. Successor mechanism: when the contract is 0, the smart contract will take out eth from the special account to reward the last 30 players with the bet amount, which is twice of the bet amount.</span><br>
+<span>14. Nirvana mechanism: if the contract balance is 0, the restart mechanism will be started automatically. When restarting, everyone's account will return to 0, but the node relationship will not change, and a new round of game will start.
+</span><br>
+                <span>
+                    Pattern highlights<br>
+1.Intelligent contract, 100% open source, open rules, transparent data；<br>
+2.Combining static and dynamic, rewarding diversification, and rewarding great contributors by strength；<br>
+3.Long-term design, stability and rationality, currency exchange, mutual benefit；<br>
+4.Prize pool human nature, lottery life, fun games, intelligent ecology；<br>
+5.Circle game, promote currency circle, currency circle appreciation, feed back the circle；<br>
+6.Diversified ecology, progressive promotion, interlocking, contract enforcement。<br>
+                </span>
+            </div>
+            <div class="activity_2">
+                Rule description
+            </div>
+            <div class="activity_3">
+                X
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/api.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./vendor/layer.js"></script>
+<script type="text/javascript"
+    src="https://www.jq22.com/demo/clipboard.js-master201703170013/dist/clipboard.min.js"></script>
+<script>
+    var account = '';
+    var net_id = '';
+    var receiveAddress = '';
+    var identity=localStorage.getItem("identity") || '';
+    var invitation_code = get_param("invite_code");
+    var currentPosition = '';
+    var isQueueInvest = '';
+    localStorage.setItem("language", "english");
+
+    if (invitation_code == null || invitation_code == undefined || invitation_code == ""){
+        invitation_code = '';
+    }
+
+    // 侧导航
+    $("#icon_aside").click(function () {
+        $(".aside").removeClass("hide");
+    })
+    $(".aside_mask").click(function () {
+        $(".aside").addClass("hide");
+    })
+
+
+    // 弹出层分享链接
+    // $(".lianjie").click(function () {
+    //     $(".ceng").removeClass("hide");
+    //     $(".aside").addClass("hide");
+
+    //     // $('.copy').html(invite_code);
+    //     // $(".aside1").removeClass("hide1");
+    // })
+    $(".xx").click(function () {
+        $(".ceng").addClass("hide");
+    })
+
+    // 活动规则
+    $('#guize').click(function () {
+        $('.activity').removeClass('hide');
+    })
+    $('.activity_3').click(function () {
+        $('.activity').addClass('hide');
+    })
+
+
+    // 投资
+    $('.tou').click(function () {
+        $('.shu').html($(this).find('span').text());
+    })
+    // +-
+    $('.jia').click(function () {
+        if ($('.shu').text() >= 1 && $('.shu').text() != 30) {
+            $('.shu').text(Number($('.shu').text()) + 1);
+        } else if ($('.shu').text() == 30) {
+            $('.shu').text(30);
+        }
+    })
+    $('.jian').click(function () {
+        if ($('.shu').text() >= 2) {
+            $('.shu').text(Number($('.shu').text()) - 1);
+        } else if ($('.shu').text() == 1) {
+            $('.shu').text(1);
+        }
+
+    })
+
+
+   // 链接插件
+    window.addEventListener('load', async () => {
+        // Modern dapp browsers... 现代DAPP浏览器…
+        
+        if (window.ethereum) {
+            window.web3 = new Web3(ethereum);
+
+            try {
+                // Request account access if needed
+                await ethereum.enable();
+                // Acccounts now exposed
+                // alert("1")
+
+                web3.version.getNetwork((err, netId) => {
+                    net_id = netId
+                    switch (netId) {
+                        case "1":
+                            // alert('This is mainnet')
+                            break
+                        case "2":
+                            // alert('This is the deprecated Morden test network.')
+                            break
+                        case "3":
+                            // alert('This is the ropsten test network.')
+                            break
+                        case "4":
+                            // alert('This is the Rinkeby test network.')
+                            break
+                        case "42":
+                            // alert('This is the Kovan test network.')
+                            break
+                        default:
+                        // alert('This is an unknown network.')
+                    }
+                })
+
+                // 账户账号
+                account = web3.eth.accounts[0];
+
+                loginFun(account,invitation_code);
+
+                
+                
+            } catch (error) {
+                // User denied account access... 用户拒绝帐户访问…
+            }
+        }
+        // Legacy dapp browsers... 传统的DAPP浏览器…
+        else if (window.web3) {
+            window.web3 = new Web3(web3.currentProvider);
+            // Acccounts always exposed
+            web3.eth.sendTransaction({/* ... */ });
+        }
+        // Non-dapp browsers... 非DAPP浏览器…
+        else {
+            $('.Tip').html('Non-ethernet browser detected. Please install MetaMask first!');
+            // alert('检测到非以太坊浏览器. 你应该考虑试试安装 MetaMask!');
+        }
+    });
+
+
+    // 投资
+    $("#button").click(function () {
+
+        if (identity == "" || identity == undefined || identity == null){
+            layer_msg("Please refresh and retry")
+            return false;
+        }
+
+        // if (net_id != "1"){
+        //     layer_msg("Please switch to the main network")
+        //     return false;
+        // }
+
+         if(isQueueInvest==0){
+            url = '/api/investment/pay';
+        }else{
+            url = '/api/investment/queue';
+        }
+
+        var value = parseInt($('.shu').text())
+        if (value < 1) {
+            //提示
+            layer_msg("Digital error")
+            return false;
+        }
+
+        if(currentPosition > 30){
+            layer_msg("The amount of single account investment shall not exceed 30ETH.")
+            return
+        }
+
+        loadding();
+        var zhuanzhang = value * 1000000000000000000
+        window.web3.eth.sendTransaction({
+            from: account,
+            to: receiveAddress,
+            value: zhuanzhang
+        }, function callback(err, value) {
+            if (err == null) {
+                     postFun('/api/investment/pay',{
+                        amount:""+value,
+                        hash: hash
+                    },function(req){
+                        layer.closeAll();
+                    if (req.basic.status == "1") {
+                            layer_msg("Participation in success");
+
+                            loginFun(account,invitation_code);
+                    }else{
+                             layer_msg(req.basic.msg);
+                    }})
+
+
+            } else {
+                //错误提示
+                layer_msg("Please try again.")
+            }
+        });
+    })
+
+
+    //余额提现
+    $('#redeem').click(function () {
+        if($('.inviteCode').html()){
+        loadding();
+         postFun('/api/withdrawal/redeem',{},function(req){
+            layer.closeAll();
+                    if (req.basic.status == "1") {
+                            layer_msg(req.basic.msg);
+                            loginFun(account,invitation_code);
+                    }else{
+                             layer_msg(req.basic.msg);
+                    }})
+         }else{
+        layer_msg('You are not in the game yet. Please bet and try again!');
+     }
+    })
+
+    $('.profit').click(function () {
+        if($('.inviteCode').html()){
+        loadding();
+         postFun('/api/withdrawal/profit',{},function(req){
+            layer.closeAll();
+                    if (req.basic.status == "1") {
+                            layer_msg(req.basic.msg);
+                            loginFun(account,invitation_code);
+                    }else{
+                             layer_msg(req.basic.msg);
+                    }})
+         }else{
+        layer_msg('You are not in the game yet. Please bet and try again!');
+     }
+
+    })
+
+    $('#futou').click(function () {
+        if($('.inviteCode').html()){
+        loadding();
+         postFun('/api/investment/rePay',{},function(req){
+            layer.closeAll();
+                    if (req.basic.status == "1") {
+                            layer_msg(req.basic.msg);
+                            loginFun(account,invitation_code);
+                    }else{
+                             layer_msg(req.basic.msg);
+                    }})
+          }else{
+        layer_msg('You are not in the game yet. Please bet and try again!');
+     }
+
+    })
+
+     $('.guoqi').click(function () {
+
+        localStorage.setItem("language","chinese");
+
+    })
+
+     $('.tips').click(function(event) {
+         layer.open({
+          type: 1,
+          shade: false,
+          title: false, //不显示标题
+          content: 'Every Christmas, the ether will always hold the grand gold medal of the ether coin. Players can win the ETH high prize with the gold coin of the ether, and have the chance to obtain the eternal pass of ether, and become the permanent net body member of the eternal ecology of the ether.On Christmas Eve, the ether will always hold a grand gold coin winning event. Players can win the ETH high prize with the gold coin of the ether, and have the chance to obtain the eternal pass of ether, and become the permanent net body member of the eternal ecology of the ether.', //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
+          cancel: function(){
+            layer.closeAll();
+          }
+        });
+     });
+
+    $('#chouj').click(function () {
+        $(".tit").html('');
+        $(".ht").html('');
+        if($('.inviteCode').html()){
+        loadding();
+         postFun('/api/lottery/join ',{},function(req){
+            layer.closeAll();
+            if (req.basic.status == "1") {
+                 $(".ceng").removeClass("hide");
+                $(".aside").addClass("hide");
+                if(req.data.prize.prizeValue==0){
+                    $(".tit").html('Thank you for your patronage!');
+                }else{
+                    $(".tit").html('Congratulations on your winning the prize!');
+                    $(".ht").html('You got it'+ req.data.prize.prizeValue +'ETH，Your wallet has been put in. Please check it carefully.');
+                }
+                loginFun(account,invitation_code);
+            }else{
+                     layer_msg(req.basic.msg);
+                     loginFun(account,invitation_code);
+            }})
+         }else{
+        layer_msg('You are not in the game yet. Please bet and try again!');
+     }
+         
+    })
+
+    function loginFun(account,invitation_code){
+                    postFun('/api/login',{
+                        address: account,
+                        invitationCode: invitation_code
+                    },function(req){
+                    if (req.basic.status == "1") {
+                             receiveAddress = req.data.receiveAddress
+                            invitation_code = req.data.inviteCode;
+                            identity = req.data.identity;
+                            currentPosition = req.data.currentPosition;
+                            isQueueInvest = req.data.isQueueInvest;
+                            $('.Invitation').html(req.data.invitationUrl);  //链接地址
+
+                            $('.inviteCode').html(req.data.inviteCode);     //邀请码
+                            $('.staticLevel').html('Lv '+req.data.staticLevel); //分红等级
+                            $('.dynamicLevel').html('Lv '+req.data.dynamicLevel);         //节点等级
+                            $('.reInvestCount').html(req.data.reInvestCount);              //复投次数
+                            $('.luckyDrawTime').html(req.data.luckyDrawTime);              //抽奖次数
+                            $('.parentCode').html(req.data.parentCode);      //推荐人
+                            $('.allInvest').html(req.data.allInvest+' ETH');      //总投资
+                            $('.inviteAmount').html(req.data.inviteAmount);    //邀请人数
+                            $('.comuitityNumber').html(req.data.comuitityNumber);               //网体人数
+                            $('.gold').html(req.data.gold);               //以太金币
+                            $('.allEarnings').html(req.data.allEarnings);       //总收益
+                            $('.currentPosition').html(req.data.currentPosition);       //当前持仓
+                            $('.allStaticAmount').html(req.data.allStaticAmount);       //投注分红
+                            $('.allDynamicAmount').html(req.data.allDynamicAmount);       //节点收益
+                            $('.unlockAmount').html(req.data.unlockAmount);       //静态分红可提现余额
+                            $('.withdrawalAmount').html(req.data.withdrawalAmount);       //节点可提现余额
+                            $('.allBets').html(req.data.allBets);       //所有投资
+                            $('.coefficient').html('x'+req.data.coefficient);       //分红倍数
+                            $('.supporter').html(req.data.supporter || '0');       //伴随者基金
+                            $('.hisSupporterAmount').html(req.data.hisSupporterAmount || '0');       //累计基金分红
+
+                            if(localStorage.getItem("identity") != identity){
+                                localStorage.setItem("identity", req.data.identity);
+                            }         
+
+                             if(req.data.isQueueInvest==0){
+                                $(".tz").show();
+                            }else{
+                                $(".pd").show();
+                            }                                      
+                            // 邀请好友
+                            $("#copy_button").click(function () {
+                                // 复制链接
+                                var invite_code = req.data.invitationUrl;
+                                var clipboard = new Clipboard('#copy_button', {
+                                    text: function () {
+                                        return invite_code;
+                                    }
+                                });
+                                clipboard.on('success', function (e) {
+                                    layer_msg("Replication success ");
+                                });
+                                clipboard.on('error', function (e) {
+                                    layer_msg("copy failed");
+                                });
+                            })
+
+                    } else {
+                            layer_msg(req.basic.msg);
+                    }
+                         
+                    })
+
+                }
+</script>
+
+</html>
