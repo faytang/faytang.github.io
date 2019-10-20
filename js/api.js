@@ -1,6 +1,5 @@
-var api_domain = 'http://161.117.192.11:8080';
+var api_domain = 'ttps://www.uct.link/secure';
 // https://www.uct.link/secure
-// var api_domain = 'http://cw.wanzhantong.cn/api/v1/';
 var token = '';
 
 /**获取url中字段的值
