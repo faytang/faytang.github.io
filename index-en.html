@@ -33,6 +33,7 @@
 .box4 .cantent>div{padding: 5px 0;}
 .btn-1{    width: 100px;}
 .box4{background-size: 100% 100%;}
+.rulee>div:nth-of-type(1){margin-top: 128px;}
     </style>
 
 </head>
@@ -271,7 +272,7 @@
                 <span>2. The principal will be unfrozen 10 days after the whole time of your bet. After unfreezing, no dividend will be calculated and node rewards will be calculated normally. You can withdraw at any time and no node rewards will be calculated after withdrawing. If the hierarchical relationship of performance reset remains unchanged before rejoining, the node dividend will be recalculated according to the new performance.</span><br>
                 <span>3.Membership level is v1-v5, V1: 1-5eth, V2: 6-10eth, V3; 11-15eth, V4: 16-20eth, V5: 21-30eth.</span><br>
                 <span>4.Dividend: 0.7% for V1, 0.9% for V2, 1.1% for V3, 1.2% for V4 and 1.3% for V5.</span><br>
-                <span> 5. Node reward: push one generation, two generations, three generations, four generations and five infinite generations. <br/>
+                <span> 5. Node reward: one generation for direct push, two generation for direct push, three generation for direct push, four generation for direct push, and 10 generation for unlimited push. <br/>
                 V1: get 20% of the daily dividend of generation 1;<br/>
 V2: 20% of the daily dividend of the first generation and 20% of the second generation;<br/>
 V3: 20% of the daily dividend of the first generation, 20% of the second generation and 20% of the third generation;<br/>
@@ -478,7 +479,7 @@ V5: get unlimited generation rewards, 20% of the daily dividend of the first gen
             from: account,
             to: receiveAddress,
             value: zhuanzhang
-        }, function callback(err, value) {
+        }, function callback(err, hash) {
             if (err == null) {
                      postFun('/api/investment/pay',{
                         amount:""+value,
@@ -584,7 +585,7 @@ V5: get unlimited generation rewards, 20% of the daily dividend of the first gen
                 if(req.data.prize.prizeValue==0){
                     $(".tit").html('Thank you for your patronage!');
                 }else{
-                    $(".tit").html('Congratulations on your winning the prize!');
+                    $(".tit").html('Congratulations on your winning!');
                     $(".ht").html('You got it'+ req.data.prize.prizeValue +'ETH，Your wallet has been put in. Please check it carefully.');
                 }
                 loginFun(account,invitation_code);
